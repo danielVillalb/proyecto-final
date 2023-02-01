@@ -8,6 +8,7 @@ body{
     padding: 0;
 
 }
+/**header**/
 .site-header{
     background-image: url(../../img/encabezado.jpg);
     background-size: cover;
@@ -54,7 +55,80 @@ body{
     margin: 0;
 
 }
+/** navegacion**/
+.contenedor{
+    display:flex;
+    justify-content:space-between;
+    background-color: rgba(0,0,0,.7);
+    align-items: center;
+}
+.navegacion a{
+    font-size:2rem;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 3rem;
+    text-transform: uppercase;
+}
+.navegacion a:hover{
+    background-color: rgba(255,0,0,0.8);
+}
 
 
 
 
+.navegacion a:last-of-type{
+    margin-right: 5rem;
+    color: rgba(255,0,0,0.8);
+    
+}
+.navegacion a:last-of-type:hover{
+    color: white;
+}
+.btn{
+    border: 0.1rem solid rgba(255,0,0,0.8);
+    padding: 1rem;
+    
+}
+.navegacion h2{
+    
+    color: white;
+    margin-left: 1rem;
+    
+}
+.navegacion h2::before{
+    content: '';
+    height: 2rem;
+    background-color: rgba(255,0,0,0.8);
+    width: 0.5rem;
+    display: inline-block;
+    margin-right: 1rem;
+}
+h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+/**secction**/
+.texto-main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.texto-main h2::after{
+    content:'';
+    background-image: url(../img/separador.png);
+    width: 10rem;
+    height: 3rem;
+    display: block;
+    margin: 0 auto;
+}
+.texto-main p{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    text-align: center;
+}
+.texto-main i{
+    color: black;
+    font-size: 3rem;
+}
