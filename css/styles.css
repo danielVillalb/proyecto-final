@@ -34,6 +34,7 @@ body{
     background-size: cover;
     background-position: top center;
     height: 100vh;
+    max-width: 1200px;
 }
 .iconos{
     display: flex;
@@ -157,7 +158,7 @@ h2{
     font-size: 3rem;
 }
 /* talleres */
-
+/*
 .img-container{
     background-image: url(../img/bg-talleres.jpg);
     background-size: cover;
@@ -165,59 +166,52 @@ h2{
     min-width: 100%;
     position: absolute;
 
+}*/
+.video{
+    max-height: 100%;
+    overflow-x: hidden;
+}
+.img-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    position: relative;
 }
 .eventos{
-    display: flex;
-    position: relative;
-    flex-direction:column;
-    justify-content: center;
-    border: 2px solid rgba(100,100,100,0.1);
-    flex-basis: 100%;
-    width: 500px;
-    height: 80%;
-    margin: 5rem;
-    z-index: 3;
-    background-color:rgba(255,255,255,0.5);
-    
-}
-.evento{
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1.5rem;
     margin-left: 1.5rem;
-    flex-direction: column;
+    background-color: rgba(255,255,255,0.7);
 }
 .crono{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    width: 500px;
 }
-.eventos h2{
+.crono h2{
     text-align: center;
+}
+.crono nav{
+    display: flex;
+    justify-content: space-around;
 }
 .btn-todos{
     display: flex;
     justify-content: flex-end;
-    margin-right: 1.5rem;
-    margin-bottom: 1.5rem;
-   
+    
 }
-.btn-todos a{
-    width: 100px;
+
+.btn-todos .btn{
+    width: 200px;
     text-align: center;
 }
-.evento i{
+
+.evento p i{
+    margin-right: 1.5rem;
+}
+nav h3 i{
     margin-right: 1rem;
-}
-.eventos h2::after{
-    content:'';
-    background-image: url(../img/separador.png);
-    width: 10rem;
-    height: 3rem;
-    display: block;
-    margin: 0 auto;
-}
-h3 i{
-    margin-right: 0.5rem;
 }
 
 
