@@ -39,6 +39,7 @@ html {
     background-size: cover;
     background-position: top center;
     height: 100vh;
+    width:100%;
     
 }
 @media (min-width:768px){
@@ -94,10 +95,14 @@ html {
     color: white;
 }
 .titulo h1{
-    font-size: 6rem;
+    font-size: 2rem;
     text-transform: uppercase;
     margin: 0;
-
+}
+@media(min-width:768px){
+    .titulo h1{
+        font-size:6rem
+    }
 }
 /** navegacion**/
 
@@ -219,6 +224,7 @@ h2{
     position: relative;
 }
 .eventos{
+    width:100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -227,7 +233,7 @@ h2{
     background-color: rgba(255,255,255,0.7);
 }
 .crono{
-    width: 500px;
+    width: 100%;
 }
 .crono h2{
     text-align: center;
