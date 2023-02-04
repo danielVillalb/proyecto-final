@@ -112,9 +112,16 @@ html {
     font-size:2rem;
     color: white;
     text-decoration: none;
-    display: inline-block;
+    display: block;
     margin-right: 3rem;
     text-transform: uppercase;
+    display:none;
+}
+@media (min-width:768px){
+    .navegacion a{
+        display:inline-block;
+    }
+    
 }
 .navegacion a:hover{
     background-color: rgba(255,0,0,0.8);
@@ -159,12 +166,7 @@ h2{
     text-transform: uppercase;
 }
 /**secction**/
-.texto-main{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    
-}
+
 .texto-main h2::after{
     content:'';
     background-image: url(../img/separador.png);
@@ -172,6 +174,9 @@ h2{
     height: 3rem;
     display: block;
     margin: 0 auto;
+}
+.texto-main h2{
+    text-align:center;
 }
 .texto-main p{
     margin-left: 5rem;
@@ -183,15 +188,7 @@ h2{
     font-size: 3rem;
 }
 /* talleres */
-/*
-.img-container{
-    background-image: url(../img/bg-talleres.jpg);
-    background-size: cover;
-    background-position: top center;
-    min-width: 100%;
-    position: absolute;
 
-}*/
 .video{
     max-height: 100%;
     overflow-x: hidden;
