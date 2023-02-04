@@ -220,11 +220,11 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    max-width: 100%;
     position: relative;
 }
 .eventos{
-    width:100%;
+    object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -233,7 +233,7 @@ h2{
     background-color: rgba(255,255,255,0.7);
 }
 .crono{
-    width: 100%;
+    width: 90%;
 }
 .crono h2{
     text-align: center;
