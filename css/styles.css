@@ -10,7 +10,7 @@ body{
     font-size:1.6rem;
     margin: 0;
     padding: 0;
-    min-width: 110%;
+    min-width: 100%;
 
 }
 /*Utilidades  */
@@ -635,6 +635,7 @@ cite span{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 .container-newsletter p{
     margin-top: 6rem;
