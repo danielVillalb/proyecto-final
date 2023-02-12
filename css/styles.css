@@ -407,12 +407,13 @@ h2{
 }
 @media(min-width:768px){
     .contador-contenido ul{
-        
-       
     justify-content: space-around;
     }
     .contador-contenido li{
         flex-basis: 25%;
+    }
+    .contador{
+        min-width:1200px;
     }
 }
 
@@ -679,10 +680,18 @@ cite span{
 .footer-informacion{
    
     display: flex;
+    flex-direction: column;
     width: 90%;
     margin: 0 auto;
     justify-content: space-between;
-
+}
+@media (min-width: 768px){
+    .footer-informacion{
+        flex-direction: row;
+    }
+    .minimo{
+        min-width:1200px;
+    }
 }
 .footer-informacion div{
     flex-basis: 30%;
