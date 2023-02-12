@@ -1,0 +1,13 @@
+
+.contenedor .galeria .fotos{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.contenedor .galeria .fotos .invitado{
+    flex-basis: 25%;
+}
+
+
+
