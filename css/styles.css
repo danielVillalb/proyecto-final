@@ -176,10 +176,13 @@ h2{
     text-transform: uppercase;
 }
 /**secction**/
-
+.texto-main-content{
+    width: 100%;
+}
 
 .texto-main h2{
     text-align:center;
+    
 }
 .texto-main p{
     margin-left: 5rem;
@@ -721,3 +724,6 @@ cite span{
 
 
 
+.mapa{
+    width: 100%;
+}
