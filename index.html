@@ -12,7 +12,12 @@
         href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/a6da1f6f54.js" crossorigin="anonymous"></script>
-  
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
+    <script src="jquery.countdown.min.js"></script>
+
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -214,19 +219,19 @@
     <div class="cuenta-regresiva contador-contenido">
         <ul>
             <li>
-                <p class="numeros">80</p>
+                <p class="numeros" id="dias"></p>
                 <p>dias</p>
             </li>
             <li>
-                <p class="numeros">15</p>
+                <p class="numeros" id="horas"></p>
                 <p>horas</p>
             </li>
             <li>
-                <p class="numeros">5</p>
+                <p class="numeros" id="minutos"></p>
                 <p>minutos</p>
             </li>
             <li>
-                <p class="numeros">30</p>
+                <p class="numeros" id="segundos"></p>
                 <p>segundos</p>
             </li>
         </ul>
@@ -303,6 +308,7 @@
 
 
 
+<script src="main.js"></script>
 </body>
 
 </html>
